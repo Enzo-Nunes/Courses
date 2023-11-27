@@ -1,0 +1,419 @@
+{
+  "comment" : "This is a JSON file describing a digital circuit, which can be loaded into the SEPE (Simulador Especial Para Ensino), a computer architecture simulator.",
+  "savedWithSimulatorVersion" : "2.2.0",
+  "savedWithSimulatorBuildOn" : "2023-05-01  at  07:54:14",
+  "editorLocked" : false,
+  "startAutomatically" : true,
+  "showConnectionColors" : true,
+  "zoomScale" : 100,
+  "gridVisible" : true,
+  "primary screen width" : 1920,
+  "primary screen height" : 1080,
+  "window" : {
+    "X absolute" : 0,
+    "Y absolute" : 66,
+    "X relative" : 0,
+    "Y relative" : 66,
+    "width" : 1920,
+    "height" : 1014,
+    "leftRightDividerLocation" : 251,
+    "topBottomDividerLocation" : 818
+  },
+  "connections" : [ {
+    "className" : "Connection",
+    "elementID" : 10,
+    "name" : "Connection_ID:10",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 3,
+      "targetPinID" : 6,
+      "points" : [ {
+        "X" : 357,
+        "Y" : 319
+      }, {
+        "X" : 357,
+        "Y" : 279
+      }, {
+        "X" : 469,
+        "Y" : 279
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 11,
+    "name" : "Connection_ID:11",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 1,
+      "targetPinID" : 5,
+      "points" : [ {
+        "X" : 357,
+        "Y" : 255
+      }, {
+        "X" : 469,
+        "Y" : 255
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 20,
+    "name" : "Connection_ID:20",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 7,
+      "targetPinID" : 19,
+      "points" : [ {
+        "X" : 607,
+        "Y" : 259
+      }, {
+        "X" : 637,
+        "Y" : 259
+      }, {
+        "X" : 637,
+        "Y" : 103
+      } ]
+    }, {
+      "sourcePinID" : 7,
+      "targetPinID" : 23,
+      "points" : [ {
+        "X" : 607,
+        "Y" : 259
+      }, {
+        "X" : 640,
+        "Y" : 259
+      }, {
+        "X" : 640,
+        "Y" : 279
+      }, {
+        "X" : 701,
+        "Y" : 279
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 33,
+    "name" : "Connection_ID:33",
+    "numberOfBits" : 1,
+    "segments" : [ {
+      "sourcePinID" : 32,
+      "targetPinID" : 22,
+      "points" : [ {
+        "X" : 610,
+        "Y" : 383
+      }, {
+        "X" : 656,
+        "Y" : 383
+      }, {
+        "X" : 656,
+        "Y" : 259
+      }, {
+        "X" : 701,
+        "Y" : 259
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 34,
+    "name" : "Connection_ID:34",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 24,
+      "targetPinID" : 30,
+      "points" : [ {
+        "X" : 836,
+        "Y" : 239
+      }, {
+        "X" : 909,
+        "Y" : 239
+      } ]
+    } ]
+  } ],
+  "modules" : [ {
+    "className" : "ModuleHexaInput",
+    "elementID" : 0,
+    "name" : "B",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 304,
+    "positionY" : 240,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 502,
+    "simGuiYRelative" : 571,
+    "simGuiWidth" : 158,
+    "simGuiHeight" : 79,
+    "nHexaDigits" : 1,
+    "outPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 1,
+      "name" : "OUT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 11
+    }
+  }, {
+    "className" : "ModuleHexaInput",
+    "elementID" : 2,
+    "name" : "A",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 304,
+    "positionY" : 304,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 501,
+    "simGuiYRelative" : 414,
+    "simGuiWidth" : 158,
+    "simGuiHeight" : 79,
+    "nHexaDigits" : 1,
+    "outPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 3,
+      "name" : "OUT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 10
+    }
+  }, {
+    "className" : "ModuleAdder",
+    "elementID" : 4,
+    "name" : "Adder",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 474,
+    "positionY" : 224,
+    "nInputPinsArray" : [ {
+      "className" : "InPin",
+      "elementID" : 5,
+      "name" : "IN0",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 11,
+      "pinValueFixed" : "-"
+    }, {
+      "className" : "InPin",
+      "elementID" : 6,
+      "name" : "IN1",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 10,
+      "pinValueFixed" : "-"
+    } ],
+    "outPin" : {
+      "className" : "OutPin",
+      "elementID" : 7,
+      "name" : "OUT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 20
+    },
+    "carryInPin" : {
+      "className" : "InPin",
+      "elementID" : 8,
+      "name" : "CARRY_IN",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "0"
+    },
+    "carryOutPin" : {
+      "className" : "OutPin",
+      "elementID" : 9,
+      "name" : "CARRY_OUT",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1
+    }
+  }, {
+    "className" : "ModuleHexaDisplays",
+    "elementID" : 18,
+    "name" : "Hexadecimal displays",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 642,
+    "positionY" : 88,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 1211,
+    "simGuiYRelative" : 448,
+    "simGuiWidth" : 95,
+    "simGuiHeight" : 157,
+    "nHexaDigits" : 1,
+    "onColor" : "Red",
+    "zColor" : "Black_White",
+    "inPin" : {
+      "className" : "InPin",
+      "elementID" : 19,
+      "name" : "IN",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 20,
+      "pinValueFixed" : "-"
+    }
+  }, {
+    "className" : "ModuleFlipFlop",
+    "elementID" : 21,
+    "name" : "Flip-Flop",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 706,
+    "positionY" : 224,
+    "clockInPin" : {
+      "className" : "InPin",
+      "elementID" : 22,
+      "name" : "CLOCK_IN",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 33,
+      "pinValueFixed" : "-"
+    },
+    "inDPin" : {
+      "className" : "InPin",
+      "elementID" : 23,
+      "name" : "D",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 20,
+      "pinValueFixed" : "-"
+    },
+    "outQPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 24,
+      "name" : "Q",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 34
+    },
+    "outQNotPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 25,
+      "name" : "Q_NOT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1
+    },
+    "oePin" : {
+      "className" : "InPin",
+      "elementID" : 26,
+      "name" : "OUT_ENABLE",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "1"
+    },
+    "clearPin" : {
+      "className" : "InPin",
+      "elementID" : 27,
+      "name" : "CLEAR",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "CIRCLE",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "1"
+    },
+    "enablePin" : {
+      "className" : "InPin",
+      "elementID" : 28,
+      "name" : "ENABLE",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "1"
+    }
+  }, {
+    "className" : "ModuleHexaDisplays",
+    "elementID" : 29,
+    "name" : "Hexadecimal displays",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 914,
+    "positionY" : 224,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 890,
+    "simGuiYRelative" : 265,
+    "simGuiWidth" : 95,
+    "simGuiHeight" : 175,
+    "nHexaDigits" : 1,
+    "onColor" : "Red",
+    "zColor" : "Black_White",
+    "inPin" : {
+      "className" : "InPin",
+      "elementID" : 30,
+      "name" : "IN",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 34,
+      "pinValueFixed" : "-"
+    }
+  }, {
+    "className" : "ModuleToggleButtons",
+    "elementID" : 31,
+    "name" : "Toggle buttons",
+    "numberOfBits" : 1,
+    "moduleDelay" : 5,
+    "positionX" : 504,
+    "positionY" : 368,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 844,
+    "simGuiYRelative" : 685,
+    "simGuiWidth" : 56,
+    "simGuiHeight" : 54,
+    "highColor" : "Red",
+    "lowColor" : "Black",
+    "outPin" : {
+      "className" : "OutPin",
+      "elementID" : 32,
+      "name" : "OUT",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 33
+    }
+  } ]
+}

@@ -1,0 +1,8 @@
+dracula-gtk-theme
+numix-cursor-theme-git
+phinger-cursors
+sddm-conf-git
+sddm-sugar-candy-git
+spicetify-marketplace-bin
+sweet-theme-git
+wttrbar-git

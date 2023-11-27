@@ -1,0 +1,2 @@
+descodificaDia2(SequenciaFonte, SequenciaAlvo, MensagemCodificada, MensagemDescodificada) :-
+    findall(M, (member(ElAlvo, MensagemCodificada), nth1(Index, SequenciaAlvo, ElAlvo), nth1(Index, SequenciaFonte, ElFonte)), MensagemDescodificada).

@@ -1,0 +1,1 @@
+tira_numeros(List, List_Sem_Nums) :- exclude(number, List, List_Sem_Nums).
